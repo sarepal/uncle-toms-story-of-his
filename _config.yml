@@ -1,0 +1,69 @@
+author:
+  email: null
+  name: An Author
+  twitter: null
+  url: null
+baseurl: /uncle-toms-story-of-his
+collections:
+  annotations:
+    output: true
+    permalink: /annotations/:path/
+  volume_pages:
+    output: true
+    permalink: /pages/:path/
+defaults:
+- scope:
+    path: ''
+    type: volume_pages
+  values:
+    deep_zoom: true
+    extra_js:
+    - volume-page.js
+    - hammer.min.js
+    - deepzoom.js
+    - openseadragon.min.js
+    layout: volume_page
+    short_label: p.
+- scope:
+    path: ''
+    type: annotations
+  values:
+    layout: annotation
+description: An annotated digital edition created with <a href="http://readux.library.emory.edu/">Readux</a>
+gems:
+- jekyll-sitemap
+homepage_image: https://readux.ecds.emory.edu/books/emory:b5j2m/pages/emory:gnskh/single-page/
+image_size:
+  page:
+    height: 1000
+    width: 733
+  small-thumbnail:
+    height: 100
+    width: 73
+  thumbnail:
+    height: 300
+    width: 219
+permalink: pretty
+publication_info:
+  author: Henson, Josiah, 1789-1883.
+  date: '2017'
+  editors:
+  - Sara Palmer
+  tei_xml: tei.xml
+  title: '"Uncle Tom''s story of his life"  an autobiography of the Rev. Josiah Henson
+    (Mrs. Harriet Beecher Stowe''s "Uncle Tom") : from 1789 to 1876 , an annotated
+    digital edition'
+show_annotation_author: true
+source_info:
+  author: Henson, Josiah, 1789-1883.
+  date: '1876'
+  pdf_url: https://readux.ecds.emory.edu/books/emory:b5j2m/pdf/#page=2
+  title: '"Uncle Tom''s story of his life"  an autobiography of the Rev. Josiah Henson
+    (Mrs. Harriet Beecher Stowe''s "Uncle Tom") : from 1789 to 1876 '
+  url: https://readux.ecds.emory.edu/books/emory:b5j2m/
+  via_readux: true
+tagline: ', an annotated digital edition'
+title: '"Uncle Tom''s story of his life"  an autobiography of the Rev. Josiah Henson
+  (Mrs. Harriet Beecher Stowe''s "Uncle Tom") : from 1789 to 1876 '
+url: https://sarepal.github.io
+version: 0.7
